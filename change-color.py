@@ -29,6 +29,9 @@ settingsJiri = session.query(Settings).filter(
     Settings.type == "COLOR_JIRI").one()
 settingsBelca = session.query(Settings).filter(
     Settings.type == "COLOR_BELCA").one()
+session.close()
+engine.dispose()
+
 colorJiri = settingsJiri.value.lstrip("#")
 colorRGBJiri = tuple(int(colorJiri[i:i+2], 16) for i in (0, 2, 4))
 colorBelca = settingsBelca.value.lstrip("#")
