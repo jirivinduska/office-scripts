@@ -79,6 +79,6 @@ arm_boost=1
 
 [all]
 over_voltage=4
-arm_freq=2000
+arm_freq=1800
 arm_64bit=1
 dtoverlay=w1-gpio
