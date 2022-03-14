@@ -1,6 +1,7 @@
 from api import engine
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.schema import FetchedValue
 
 Base = declarative_base()
 
