@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 
-for f in (1..7)
+for f in {1..7}
 do
   vcgencmd measure_temp
   vcgencmd measure_clock arm
