@@ -13,7 +13,7 @@ class Weather(Base):
     cpuTemp = sqlalchemy.Column(sqlalchemy.Numeric(6.2), nullable=False)
     indoorTemp = sqlalchemy.Column(sqlalchemy.Numeric(6.2), nullable=False)
     outdoorTemp = sqlalchemy.Column(sqlalchemy.Numeric(6.2), nullable=False)
-    created = sqlalchemy.Column(sqlalchemy.DateTime)
+    created = sqlalchemy.Column(sqlalchemy.DateTime, server_default=FetchedValue())
 
 
 Base.metadata.create_all(engine)
