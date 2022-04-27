@@ -43,7 +43,7 @@ for i in range(0, 150):
         i, Color(colorRGBJiri[0], colorRGBJiri[1], colorRGBJiri[2]))
     strip.show()
 
-for i in range(151, 300):
+for i in range(150, 300):
     strip.setPixelColor(
         i, Color(colorRGBBelca[0], colorRGBBelca[1], colorRGBBelca[2]))
     strip.show()
