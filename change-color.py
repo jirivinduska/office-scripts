@@ -38,12 +38,12 @@ colorBelca = settingsBelca.value.lstrip("#")
 colorRGBBelca = tuple(
     int(colorBelca[i:i+2], 16) for i in (0, 2, 4))
 
-for i in range(0, 150):
+for i in range(0, 135):
     strip.setPixelColor(
         i, Color(colorRGBJiri[0], colorRGBJiri[1], colorRGBJiri[2]))
     strip.show()
 
-for i in range(150, 300):
+for i in range(135, 300):
     strip.setPixelColor(
         i, Color(colorRGBBelca[0], colorRGBBelca[1], colorRGBBelca[2]))
     strip.show()
